@@ -1,0 +1,65 @@
+/*
+* @Author: the king
+* @Date:   2017-08-11 15:01:44
+* @Last Modified by:   the king
+* @Last Modified time: 2017-08-11 15:02:15
+*/
+.stage{
+	width: 960px;
+	height: 600px;
+	background-color: #ccc;
+	border: 1px solid #999;
+	margin: 50px auto;
+	perspective: 800px;
+}
+.container {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	transform-style: preserve-3d;
+	transition: transform 1s;
+	
+}
+.stage img {
+	
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+
+img:nth-child(9){
+	transform: rotateY(0) translateZ(300px);
+	z-index: 1;
+}
+img:nth-child(8){
+	transform: rotateY(40deg) translateZ(300px);
+	z-index: 1;
+}
+img:nth-child(7){
+	transform: rotateY(80deg) translateZ(300px);
+
+}
+img:nth-child(6){
+	transform: rotateY(120deg) translateZ(300px);
+}
+img:nth-child(5){
+	transform: rotateY(160deg) translateZ(300px);
+}
+img:nth-child(4){
+	transform: rotateY(200deg) translateZ(300px);
+}
+img:nth-child(3){
+	transform: rotateY(240deg) translateZ(300px);
+}
+img:nth-child(2){
+	transform: rotateY(280deg) translateZ(300px);
+}
+img:nth-child(1){
+	transform: rotateY(320deg) translateZ(300px);
+	z-index: 1;
+}
